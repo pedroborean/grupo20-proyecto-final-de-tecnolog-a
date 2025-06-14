@@ -1,0 +1,15 @@
+NombreUsuario,Ciudad,FechaHora,Temperatura_C,Condicion_Clima,Humedad_Porcentaje,Viento_kmh
+pedro,tandil,2025-06-13 15:26:09,8.74,nubes,90,0.72
+pedro,buenos aires,2025-06-12 08:12:33,13.2,lluvia ligera,88,14.5
+pedro,córdoba,2025-06-13 09:45:12,11.6,nublado,77,12.3
+pedro1,rosario,2025-06-14 16:20:41,15.3,cielo claro,63,9.8
+pedro1,mendoza,2025-06-15 10:05:12,9.4,niebla,92,4.2
+hola,la plata,2025-06-13 11:03:17,10.5,lluvia moderada,85,11.7
+hola,bahía blanca,2025-06-14 17:42:00,7.9,cielo claro,58,13.1
+pedro,puerto madryn,2025-06-14 08:46:04,7.14,nubes dispersas,55,15.62
+pedro,tucuman,2025-06-14 08:56:19,12,niebla,100,11.12
+momo,berazategui,2025-06-14 08:57:58,12.16,lluvia moderada,88,15.66
+pedro,tandil,2025-06-14 09:39:18,7.57,nubes,68,11.92
+pedro,buenos aires,2025-06-14 09:54:00,11.32,nubes,94,28.98
+pedro,buenos aires,2025-06-14 09:54:29,11.32,nubes,94,28.98
+pedro,buenos aires,2025-06-14 10:54:42,10.8,llovizna ligera,94,28.98
