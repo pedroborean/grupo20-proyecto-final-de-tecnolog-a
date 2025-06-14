@@ -52,6 +52,10 @@ def registrar_usuario(ruta_archivo):
 
     # Solicita y valida contraseña
     while True:
+        print("\nRequisitos mínimos:")
+        print(" -Al menos 8 caracteres")
+        print(" -Al menos 1 mayúscula")
+        print(" -Al menos 1 número\n")
         password = input("Ingresá una contraseña: ").strip()
         valido, errores = validar_password(password)
         if valido:
@@ -62,4 +66,3 @@ def registrar_usuario(ruta_archivo):
             print("La contraseña no es segura. Motivos:")
             for error in errores:
                 print(f"  - {error}")
-            print("Recomendación: Usá al menos 8 caracteres, incluyendo una mayúscula y un número.\n")
