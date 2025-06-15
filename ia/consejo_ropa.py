@@ -5,6 +5,10 @@ import os
 # Carga las variables de entorno desde un archivo .env 
 load_dotenv()
 
+# Carga robusta de variables de entorno usando ruta absoluta (multiplataforma)
+env_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+load_dotenv(dotenv_path=env_path)
+
 # Configura la clave de API para el uso del modelo de Gemini desde las variables de entorno
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))  
 

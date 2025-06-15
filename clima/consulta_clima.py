@@ -7,6 +7,10 @@ import os
 # Carga las variables de entorno definidas en un archivo .env (por ejemplo, la API Key)
 load_dotenv()
 
+# Ruta absoluta al archivo .env (usando os.path para compatibilidad multiplataforma)
+env_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+load_dotenv(dotenv_path=env_path)
+
 # Definición de la URL base para consultar el clima
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
