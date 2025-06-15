@@ -57,7 +57,9 @@ def login(ruta_archivo):
 
 # Bloque de prueba para ejecución directa del archivo
 if __name__ == "__main__":
-    usuario_logueado = login("usuarios_simulados.csv")
+    # Ruta robusta al archivo CSV de usuarios
+    ruta_usuarios = os.path.join(os.path.dirname(__file__), "usuarios", "usuarios_simulados.csv")
+    usuario_logueado = login(ruta_usuarios)
     if usuario_logueado:
         print("Accedés al Menú Principal...")
     else:

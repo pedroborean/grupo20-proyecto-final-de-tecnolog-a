@@ -56,13 +56,19 @@ def consultar_clima(ciudad):
             "Viento_kmh": round(viento, 2)
         }
 
-    # Manejo de errores de red o respuesta inválida
-    except requests.RequestException as e:
-        print(f"Error al consultar la API: {e}")
+    except requests.exceptions.HTTPError as errh:
+        if respuesta.status_code == 401:
+            print(f"Error de autenticación OWM: API Key inválida.")
+        elif respuesta.status_code == 404:
+            print(f"Error OWM: Ciudad '{ciudad}' no encontrada.")
+        else:
+            print(f"Error HTTP OWM: {errh}")
         return None
 
-    # Manejo de errores si el formato de los datos no es el esperado
-    except KeyError:
-        print("No se pudo obtener la información. Verificá el nombre de la ciudad.")
+    except requests.exceptions.RequestException as err:
+        print(f"Error de conexión/petición OWM: {err}")
         return None
 
+    except json.JSONDecodeError:
+        print("Error OWM: La respuesta de la API no es JSON válido.")
+        return None
