@@ -5,7 +5,7 @@ Aplicación de consola en Python que permite consultar el clima en tiempo real, 
 
 ## Requisitos del entorno
 
-Asegurate de tener instalado Python 3.11 o superior. Luego, seguí estos pasos:
+Asegurate de tener instalado Python 3.11 o superior y de estar en la ruta correspondiente. Luego, seguí estos pasos:
 
 1. Crear entorno virtual (recomendado)
 python3.11 -m venv venv
