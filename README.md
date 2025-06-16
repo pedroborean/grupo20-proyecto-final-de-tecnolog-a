@@ -15,7 +15,11 @@ venv\Scripts\activate     # En Windows
 
 2. Instalar dependencias
 Primero asegurate de tener pip instalado con.
-pip -- version
+pip --version
+
+En caso de que no te funcione el comando pip, podes ejecutarlo con python con:
+py -m pip install -r requirements.txt
+
 
 Instalá las bibliotecas necesarias con:
 
