@@ -2,6 +2,12 @@
 
 Aplicación de consola en Python que permite consultar el clima en tiempo real, almacenar un historial de consultas por usuario, generar estadísticas globales y obtener consejos personalizados de vestimenta a través de una IA (Gemini).
 
+## Autores
+
+Pedro Borean, Augusto José Scaminaci, Luis Vito Creatore, Pedro Giordanino Cernicchiaro y Xul Cielo Mizza Krasnobroda.
+
+Grupo 20 - MaTech - Proyecto Final de Tecnología - ITBA
+
 
 ## Requisitos del entorno
 
@@ -85,8 +91,3 @@ tp-final-tecno-grupo20/
 ## Seguridad
 - Las claves se cargan mediante variables de entorno utilizando python-dotenv.
 - Las contraseñas se almacenan en texto plano solo con fines educativos. En un entorno real, deben almacenarse con técnicas como hashing (bcrypt, argon2, etc.).
-
-## Autores
-Pedro Borean, Augusto José Scaminaci, Luis Vito Creatore, Pedro Giordanino Cernicchiaro y Xul Cielo Mizza Krasnobroda.
-
-Grupo 20 - MaTech - Proyecto Final de Tecnología - ITBA
