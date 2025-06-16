@@ -22,5 +22,4 @@ def sugerencias_mejora():
         "Usá al menos 8 caracteres.",
         "Incluí una letra mayúscula.",
         "Incluí al menos un número.",
-        # "Agregá caracteres especiales (!, @, #, etc.) para mayor seguridad."
     ]

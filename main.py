@@ -58,7 +58,8 @@ def menu_principal(usuario):
         elif opcion == '5':
             print("\n      --Acerca de GuardiánClima--\n")
             print("Descripción general:")
-            print("GuardiánClima ITBA es una aplicación de consola desarrollada con el objetivo de proporcionar información climática actualizada, permitir el seguimiento del historial de consultas")
+            print("GuardiánClima ITBA es una aplicación de consola desarrollada con el objetivo de proporcionar")
+            print("información climática actualizada, permitir el seguimiento del historial de consultas")
             print("por usuario, generar estadísticas globales y brindar consejos personalizados mediante el uso de")
             print("inteligencia artificial.")
 

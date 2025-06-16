@@ -7,12 +7,16 @@ Aplicación de consola en Python que permite consultar el clima en tiempo real, 
 
 Asegurate de tener instalado Python 3.11 o superior y de estar en la ruta correspondiente. Luego, seguí estos pasos:
 
-1. Crear entorno virtual (recomendado)
-python3.11 -m venv venv
+1. Crear entorno virtual
+# disclaimer! las veces que probamos en windows con el entorno virtual no funcionó. Preferentemente usarlo local en esta plataforma.
+python -m venv venv
 source venv/bin/activate  # En Mac/Linux
 venv\Scripts\activate     # En Windows
 
 2. Instalar dependencias
+Primero asegurate de tener pip instalado con.
+pip -- version
+
 Instalá las bibliotecas necesarias con:
 
 pip install -r requirements.txt
@@ -49,17 +53,12 @@ El proyecto utiliza dos APIs externas:
 Debés crear un archivo .env (no incluido en el repositorio) con el siguiente contenido:
 WEATHER_API_KEY=tu_clave_de_openweather
 GEMINI_API_KEY=tu_clave_de_gemini
-No incluyas este archivo en el repositorio.
 
 2. Compartir .env.template
-Incluimos en el repositorio un archivo llamado .env.template con este contenido de ejemplo:
-
-WEATHER_API_KEY=(tu_iria_clave_aqui)
-GEMINI_API_KEY=(tu_iria_clave_aqui)
-Esto permite a los revisores y compañeros completar fácilmente sus claves.
+Incluimos en el repositorio un archivo llamado .env.template con este contenido de ejemplo. En este caso para facilitar la corrección dejamos nuestras propias APIKEYS. Bastaría con renombrar el archivo unicamente a .env.
 
 ## Estructura del repositorio:
-tp_final_tecno/
+tp-final-tecno-grupo20/
 ├── clima/
 │   ├── consulta_clima.py
 │   ├── historial.py
